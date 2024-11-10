@@ -54,6 +54,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun HomeScreen(navController: NavController) {
     val selectedIndex = remember { mutableStateOf(0) }
+    val amin21 = remember { mutableStateOf(0) }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
