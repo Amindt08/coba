@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
                     composable("home") {
                         HomeScreen(navController) // Pass navController ke HomeScreen
                     }
-                    composable("profile") {
+                    composable("apayaw") {
                         ProfileScreen() // Pindah ke ProfileScreen
                     }
                 }
@@ -54,6 +54,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun HomeScreen(navController: NavController) {
     val selectedIndex = remember { mutableStateOf(0) }
+    val amin12 = remember { mutableStateOf(0) }
+
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
